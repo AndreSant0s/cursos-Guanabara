@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Aprendendo nesse arquivo sobre ID e CLASS.
+    Só pode haver um elemento com o id especifico por arquivo HTML, mas é possivel ter varios elementos com a mesma classe */
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(44, 109, 0);
+
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(44, 109, 0);
+    color: white;
+}
+
+h2 {
+    color: rgb(73, 109, 71)
+}
+
+.basico {
+    color: blue;
+}
+
+.intermediario {
+    color: red;
+}
+
+.avancado {
+    color: yellow;
+}

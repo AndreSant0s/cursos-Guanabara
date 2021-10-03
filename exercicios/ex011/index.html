@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <p>Agora iremos apreder a adicionar audios em HTML.</p>
+
+    <!-- Este é um modo de adicionar um aúdio em HTML, porém só é possível adicionar um de cada vez, e e ele pode não ser compatível com o navegador-->
+
+    <audio src="midea/happy-mistake.mp3" controls autoplay></audio>
+        
+    <br>
+
+    <!-- Está é a segunda forma de adicionar um audio no código, deste modo é possivel adicionar vários tipos de arquivos e o navegador vai tentar reproduzi-los em ordem de cima para baixo se o primeiro não carregar.-->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midea/guanacast-33.mp3" type="audio/mp3">
+        <source src="midea/happy-mistake.mp3" type="audio/mp3">
+        <p>Infelizmente não é possível reproduzir o rquivo de aúdio, mas clique <a href="midea/guanacast-33.mp3">aqui</a> para baixa-lo.</p>
+    </audio>
+
+</body>
+</html>
